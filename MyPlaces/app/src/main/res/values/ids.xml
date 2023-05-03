@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="HomeFragment" type="id" />
+    <item name="ListFragment" type="id" />
+    <item name="EditFragment" type="id" />
+</resources>
