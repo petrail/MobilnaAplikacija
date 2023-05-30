@@ -21,28 +21,35 @@
     <fragment
         android:id="@+id/ListFragment"
         android:name="elfak.mosis.myplaces.ListFragment"
-        android:label="@string/second_fragment_label"
+        android:label="My Places"
         tools:layout="@layout/fragment_list">
-
-        <action
-            android:id="@+id/action_ListFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
         <action
             android:id="@+id/action_ListFragment_to_EditFragment"
             app:destination="@id/EditFragment" />
+        <action
+            android:id="@+id/action_ListFragment_to_ViewFragment"
+            app:destination="@id/ViewFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/EditFragment"
         android:name="elfak.mosis.myplaces.EditFragment"
-        android:label="@string/edit_fragment_label"
+        android:label="Edit My Place"
         tools:layout="@layout/fragment_edit">
-
-        <action
-            android:id="@+id/action_EditFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
         <action
             android:id="@+id/action_EditFragment_to_ListFragment"
             app:destination="@id/ListFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/ViewFragment"
+        android:name="elfak.mosis.myplaces.ViewFragment"
+        android:label="View My Place"
+        tools:layout="@layout/fragment_view">
+        <action
+            android:id="@+id/action_ViewFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+    </fragment>
+
+
 </navigation>
