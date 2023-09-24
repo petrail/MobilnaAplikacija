@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/button_home"
+        android:icon="@drawable/ic_home"
+        android:fontFamily="@font/nunito"
+        android:title="@string/home"/>
+    <item android:id="@+id/button_add"
+        android:icon="@drawable/ic_add"
+        android:fontFamily="@font/nunito"
+        android:title="@string/add"/>
+    <item android:id="@+id/button_map"
+        android:icon="@drawable/ic_map"
+        android:fontFamily="@font/nunito"
+        android:title="@string/map"/>
+    <item android:id="@+id/button_rank"
+        android:icon="@drawable/ic_trophy"
+        android:fontFamily="@font/nunito"
+        android:title="@string/rank"/>
+    <item android:id="@+id/button_account"
+        android:icon="@drawable/ic_account"
+        android:fontFamily="@font/nunito"
+        android:title="@string/account"/>
+</menu>

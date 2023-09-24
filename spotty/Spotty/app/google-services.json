@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279942946810",
+    "project_id": "spotty-5a805",
+    "storage_bucket": "spotty-5a805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279942946810:android:1e0a81686a9e0d1ce38e43",
+        "android_client_info": {
+          "package_name": "elfak.mosis.spotty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279942946810-n6ed0pt6q5iinh82e3pe7arkqkktfih1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCML09cWrDITveOcPUTT8QvRDV1n0acjsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279942946810-n6ed0pt6q5iinh82e3pe7arkqkktfih1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

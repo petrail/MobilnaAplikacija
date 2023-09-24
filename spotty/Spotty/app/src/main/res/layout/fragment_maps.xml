@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        app:cardBackgroundColor="#00000000"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded"
+            tools:context=".mapa.MapsFragment"></fragment>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/mapFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/mapFilter"
+        android:textColor="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distanceFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="@string/from"
+        android:textColor="@color/background"
+        app:layout_constraintStart_toStartOf="@+id/mapFilterText"
+        app:layout_constraintTop_toTopOf="@+id/editDistanceStart"
+        app:layout_constraintBottom_toBottomOf="@+id/editDistanceStart"/>
+
+    <EditText
+        android:id="@+id/editDistanceStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/background"
+        android:ems="5"
+        android:fontFamily="@font/nunito"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/distanceFrom"
+        app:layout_constraintTop_toBottomOf="@id/mapFilterText" />
+
+    <EditText
+        android:id="@+id/editDistanceTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/background"
+        android:ems="5"
+        android:fontFamily="@font/nunito"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/distanceTo"
+        app:layout_constraintTop_toBottomOf="@id/mapFilterText" />
+
+    <TextView
+        android:id="@+id/distanceTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/nunito"
+        android:text="@string/to"
+        android:textColor="@color/background"
+        app:layout_constraintStart_toEndOf="@+id/editDistanceStart"
+        app:layout_constraintTop_toTopOf="@+id/editDistanceTo"
+        app:layout_constraintBottom_toBottomOf="@+id/editDistanceTo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/search"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/white"
+        android:fontFamily = "@font/nunito_bold"
+        app:layout_constraintStart_toStartOf="@id/mapFilterText"
+        app:layout_constraintTop_toBottomOf="@+id/editDistanceStart"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
